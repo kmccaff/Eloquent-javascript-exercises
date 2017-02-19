@@ -1,0 +1,21 @@
+function range(start, end, step) {
+  var myArray = [];
+    if ( end < start && step === undefined ) {
+      for ( var i = start; i >= end; i-- ) {
+        myArray.push(i);
+      }
+    } else if ( end > start && step === undefined ) {
+      for ( var j = start; j <= end; j++ ) {
+        myArray.push(j);
+      }
+    } else if ( step < 0  ) {
+      for ( var k = start; k >= end; k += step) {
+        myArray.push(k);
+      }
+    } else if ( step > 0 ) {
+      for ( var l = start; l <= end; l += step) {
+        myArray.push(l);
+      } 
+    } 
+return myArray;
+}
