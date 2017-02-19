@@ -1,0 +1,21 @@
+var grid = "";
+var hashCounter = 0;
+var spaceCounter = 0;
+function gridMaker(size) {
+     for (var i = 0; i < size; i++ ) {
+          for ( var j = 0; j < size; j++ ) { 
+              if ( (hashCounter + spaceCounter) % 2 === 0 ) {
+                  grid += "#";
+                  hashCounter += 1 ;
+              } else {
+                  grid += " ";
+                  spaceCounter += 1;
+              } 
+          }
+          for ( var k = 0; k < size; k++ ) { 
+            grid = grid + "\n"
+}
+}
+return grid; 
+}
+gridMaker();
