@@ -1,0 +1,19 @@
+var beancounter = 0;
+function countBs(str) {
+  for ( var i = 0; i <= str.length; i++ ) {
+    if ( str.charAt(i) === "B" ) {
+      beancounter++;
+    }
+  }
+  return beancounter;
+}
+
+var charCounter = 0;
+function countChar(str, letter) {
+  for ( var i =0; i <= str.length; i++ ) {
+    if ( str.charAt(i) === letter ) {
+      charCounter++;
+    }
+  }
+  return charCounter;
+}
